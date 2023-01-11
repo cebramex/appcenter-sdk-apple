@@ -171,10 +171,7 @@ static MSACDeviceTracker *sharedInstance = nil;
 
     // Use the old API as fallback if new one doesn't work.
     if (carrier == nil) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
       carrier = [telephonyNetworkInfo subscriberCellularProvider];
-#pragma clang diagnostic pop
     }
 #endif
 
