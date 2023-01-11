@@ -52,7 +52,7 @@ jobs:
       actions: archive
       xcWorkspacePath: AppCenter.xcworkspace
       scheme: SasquatchObjC
-      args: '-GCC_TREAT_WARNINGS_AS_ERRORS=NO'
+      args: 'GCC_TREAT_WARNINGS_AS_ERRORS=NO'
 
   - task: Xcode@5
     displayName: 'Sasquatch iOS Swift Archive'
@@ -60,7 +60,6 @@ jobs:
       actions: archive
       xcWorkspacePath: AppCenter.xcworkspace
       scheme: SasquatchSwift
-      args: '-GCC_TREAT_WARNINGS_AS_ERRORS=YES'
 
 - job:
   displayName: Sasquatch macOS
