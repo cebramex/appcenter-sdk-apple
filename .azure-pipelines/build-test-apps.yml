@@ -24,7 +24,7 @@ jobs:
       actions: archive
       xcWorkspacePath: AppCenter.xcworkspace
       scheme: SasquatchPuppet
-      args: 'GCC_TREAT_WARNINGS_AS_ERRORS=NO'
+      args: 'GCC_TREAT_WARNINGS_AS_ERRORS=NO SWIFT_TREAT_WARNINGS_AS_ERRORS=NO'
 
 - job:
   displayName: Puppet Mac Catalyst
@@ -52,7 +52,7 @@ jobs:
       actions: archive
       xcWorkspacePath: AppCenter.xcworkspace
       scheme: SasquatchObjC
-      args: 'GCC_TREAT_WARNINGS_AS_ERRORS=NO'
+      args: 'GCC_TREAT_WARNINGS_AS_ERRORS=NO SWIFT_TREAT_WARNINGS_AS_ERRORS=NO'
 
   - task: Xcode@5
     displayName: 'Sasquatch iOS Swift Archive'
